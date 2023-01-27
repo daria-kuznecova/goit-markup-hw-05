@@ -107,13 +107,28 @@ body {
 }
 
 .navigation-item-link {
-  color: var(--main-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-text-bcg-color);
   font-weight: 500;
 }
 
-.navigation-item-link:hover,
-.navigation-item-link:focus {
-  color: var(--secondary-text-color);
+.studio {
+  position: relative;
+  color: #404bbf;
+}
+
+.studio::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -28px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .navigation-item-link:active {
@@ -130,6 +145,10 @@ body {
 }
 
 .address-item-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   font-style: normal;
   color: var(--secondary-text-color);
 }
@@ -171,6 +190,9 @@ body {
 }
 
 .hero-btn {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 16px 32px;
 
   font-family: inherit;
@@ -328,6 +350,9 @@ body {
 }
 
 .team-social-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 12px;
   display: flex;
   justify-content: center;
@@ -374,6 +399,9 @@ body {
 }
 
 .customers-logo-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 16px 32px;
   display: flex;
   justify-content: center;
@@ -408,6 +436,9 @@ body {
 }
 
 .filters-item-btn {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 12px 24px;
 
   font-family: inherit;
@@ -442,6 +473,9 @@ body {
 }
 
 .card-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   display: block;
 }
 
@@ -462,7 +496,6 @@ body {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  background-repeat: 1px solid #e7e9fc;
 }
 
 .card-item-title {
@@ -532,6 +565,9 @@ body {
 }
 
 .footer-social-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 8px;
   display: flex;
   width: 100%;
