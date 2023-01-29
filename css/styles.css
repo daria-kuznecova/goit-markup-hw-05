@@ -687,4 +687,5 @@ body {
 .modal-close:focus {
   color: #ffffff;
   background-color: #404bbf;
+  cursor: pointer;
 }
